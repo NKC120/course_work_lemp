@@ -1,0 +1,10 @@
+---
+  - hosts: local
+    become: yes
+    user: root
+    roles:
+      - common
+      - nginx
+      - mysql
+      - php
+      - phpmyadmin
